@@ -32,15 +32,6 @@ You can see that by navigating through the examples, changing theme and going vi
 
 Theme auto detection based on user's OS preferences and local settings storage are enabled by default.
 
-## 🔮 Future
-
-TODO
-
-- [ ] Make charts accessible through hidden data
-- [ ] Refactor and split `shadow-outline-<color>` plugin
-- [ ] Paginate tables with Alpine
-- [ ] Focus first element when dropdowns are opened
-
 ## OSS used
 
 - [Tailwind CSS](https://tailwindcss.com/)
