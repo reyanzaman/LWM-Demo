@@ -16,7 +16,7 @@
     <!-- Desktop sidebar -->
     <aside class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0">
       <div class="py-4 text-gray-500 dark:text-gray-400">
-        <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#">
+        <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="index.html">
           Smart Learning Platform
         </a>
         <ul class="mt-6">
@@ -99,7 +99,7 @@
       x-transition:leave-end="opacity-0 transform -translate-x-20" @click.away="closeSideMenu"
       @keydown.escape="closeSideMenu">
       <div class="py-4 text-gray-500 dark:text-gray-400">
-        <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#">
+        <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="index.html">
           Smart Learning Platform
         </a>
         <ul class="mt-6">
@@ -330,9 +330,29 @@
               <div class="bg-white rounded-lg shadow-md dark:bg-gray-800 p-4">
                 <div class="relative" style="padding-top: 56.25%;">
                   <video controls class="absolute top-0 left-0 w-full h-full">
-                    <source src="path_to_your_video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    <source src="assets\videos\jahanara imam bio.mp4" type="video/mp4">
+                    আপনার ব্রাউজার ভিডিও সমর্থন করে না
                   </video>
+                </div>
+                <div class="flex flex-wrap mb-2 mx-4">
+                  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 6px">
+                    <div style="width: calc(25% - 12px);">
+                      <img style="width: 200px; height: 100px; border-radius: 0.5rem; border-style: solid; border-width: 3px; border-color: blueviolet;" src="assets\img\image1.jpeg" alt="">
+                      <p class="text-gray-800 dark:text-gray-400 text-center mt-2 mt-2">কিশোরী জাহানারা ইমাম</p>
+                    </div>
+                    <div style="width: calc(25% - 12px);">
+                      <img style="width: 200px; height: 100px; border-radius: 0.5rem; filter: brightness(25%);" src="assets\img\image2.jpeg" alt="">
+                      <p class="text-gray-800 dark:text-gray-400 text-center mt-2 mt-2">আজিমপুরের বাসায়</p>
+                    </div>
+                    <div style="width: calc(25% - 12px);">
+                      <img style="width: 200px; height: 100px; border-radius: 0.5rem; filter: brightness(25%);" src="assets\img\image3.jpeg" alt="">
+                      <p class="text-gray-800 dark:text-gray-400 text-center mt-2 mt-2">স্বামীসহ রেডিও পাকিস্তানে</p>
+                    </div>
+                    <div style="width: calc(25% - 12px);">
+                      <img style="width: 200px; height: 100px; border-radius: 0.5rem; filter: brightness(25%);" src="assets\img\image4.jpeg" alt="">
+                      <p class="text-gray-800 dark:text-gray-400 text-center mt-2 mt-2">বিয়ের সাজে</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -347,12 +367,8 @@
                       +</button>
                     <div x-show="open" class="bg-white dark:bg-gray-800 rounded-md shadow-lg">
                       <!-- Dropdown content -->
-                      <li>
-                        <p class="text-md font-semibold text-purple-600 dark:text-purple-400 pl-2">Jahanara Imam</p>
-                      </li>
-                      <li><a href="content.html"
-                          class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">1971 Liberation War</a>
-                      </li>
+                      <li><p href="content.html" class="text-md font-semibold text-purple-600 dark:text-purple-400 pl-2">Jahanara Imam</p></li>
+                      <li><a class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">1971 Liberation War</a></li>
                     </div>
                   </div>
                   <div x-data="{ open: false }">
@@ -361,19 +377,12 @@
                       +</button>
                     <div x-show="open" class="bg-white dark:bg-gray-800 rounded-md shadow-lg">
                       <!-- Dropdown content -->
-                      <li><a href="documents.html"
-                          class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Jahanara Imam</a></li>
-                      <li><a href="documents.html"
-                          class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Tajuddin</a></li>
-                      <li><a href="documents.html"
-                          class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">A.K.M. Mahbub ul Alam</a>
-                      </li>
-                      <li><a href="documents.html"
-                          class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Shamsul Alam</a></li>
-                      <li><a href="documents.html"
-                          class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Ayub-bin-Hayder</a></li>
-                      <li><a href="documents.html"
-                          class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Md. Saidul Islam</a></li>
+                      <li><a href="documents.html" class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Jahanara Imam</a></li>
+                      <li><a class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Tajuddin</a></li>
+                      <li><a class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">A.K.M. Mahbub ul Alam</a></li>
+                      <li><a class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Shamsul Alam</a></li>
+                      <li><a class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Ayub-bin-Hayder</a></li>
+                      <li><a class="text-md font-semibold text-gray-700 dark:text-gray-300 pl-2">Md. Saidul Islam</a></li>
                     </div>
                   </div>
                   <div x-data="{ open: false }">
@@ -632,7 +641,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Moon Princess</p>
+                            <a href="./moon.html" class="font-semibold">Moon Princess</a>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Weak Learner
                             </p>
@@ -658,7 +667,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Ms. Curry</p>
+                            <a href="./curry.html" class="font-semibold">Ms. Curry</a>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Weak Learner
                             </p>
@@ -684,7 +693,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Rulia</p>
+                            <a href="./ruila.html" class="font-semibold">Rulia</a>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Exceptional Learner
                             </p>
@@ -710,7 +719,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Washington</p>
+                            <a href="./washington.html" class="font-semibold">Washington</a>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Expert Learner
                             </p>
@@ -736,7 +745,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Jackie Chan</p>
+                            <a href="./chan.html" class="font-semibold">Jackie Chan</a>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Strong Learner
                             </p>
@@ -762,7 +771,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Maria</p>
+                            <a href="./maria.html" class="font-semibold">Maria</a>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Expert Learner
                             </p>
@@ -788,7 +797,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Gamer123</p>
+                            <a href="./gamer.html" class="font-semibold">Gamer123</a>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Expert Learner
                             </p>
@@ -814,7 +823,7 @@
                             <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                           </div>
                           <div>
-                            <p class="font-semibold">Cheesy</p>
+                            <a href="./chessy.html" class="font-semibold">Cheesy</a>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Advanced Learner
                             </p>
