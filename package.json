@@ -3,8 +3,9 @@
   "version": "1.0.2",
   "description": "A multi theme, completely accessible, with components and pages examples, ready for production dashboard.",
   "scripts": {
-    "tailwind": "tailwindcss build public/assets/css/tailwind.css -o public/assets/css/tailwind.output.css",
-    "build": "env NODE_ENV=production postcss public/assets/css/tailwind.css -o public/assets/css/tailwind.output.css",
+    "build:tailwind": "tailwindcss build public/assets/css/tailwind.css -o public/assets/css/tailwind.output.css",
+    "build:postcss": "set NODE_ENV=production&& postcss public/assets/css/tailwind.output.css -o public/assets/css/tailwind.output.min.css",
+    "build": "npm run build:tailwind && npm run build:postcss",
     "cz": "git-cz",
     "release": "release-it"
   },
@@ -20,7 +21,7 @@
     "cz-conventional-changelog": "3.2.0",
     "postcss-cli": "7.1.1",
     "release-it": "13.6.4",
-    "tailwindcss": "1.4.6",
+    "tailwindcss": "^1.4.6",
     "tailwindcss-multi-theme": "1.0.3"
   },
   "keywords": [
